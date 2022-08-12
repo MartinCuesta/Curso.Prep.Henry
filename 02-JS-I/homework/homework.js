@@ -62,20 +62,14 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x == y) {
-    return true;
-  }
-  return false;
+  return x == y;
 }
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.length === str2.lenth) {
-    return true;
-  }
-  return false;
+  return str1.length == str2.lenth;
 }
 
 function menosQueNoventa(num) {
@@ -101,14 +95,18 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  x % y;
+  return x % y;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num % === 0) {
+    return true;
+  }
+  return false;
+
 }
 
 function esImpar(num) {
