@@ -228,7 +228,7 @@ function esVocal(letra){
   //Escribe tu código aquí
   if (letra = "a" || "e" || "i" || "o" || "u") {
     return "Es vocal";
-  } else if (letra =! "a" || "e" || "i" || "o" || "u") {
+  } else if (letra = "b" || "c" || "d" || "f" || "g" || "h" || "j" || "k" || "l" || "m" || "n" || "p" || "q" || "r" || "s" || "t" || "v" || "w" || "x" || "y" || "z") {
      return "Dato incorrecto";
   } else {
       return "Dato incorrecto";
