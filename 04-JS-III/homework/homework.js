@@ -153,7 +153,7 @@ function cuentoElementos(arreglo){
 
   var cant = arreglo.length;
 
-  if (cant > 17) {
+  if (cant > 18) {
       return cant;                  //en vez de cant si queres los elementos es 'arreglo'
   }
 
@@ -215,7 +215,7 @@ function mesesDelAño(array) {
 
   var mesesPedidos = [];
 
-  if (array.includes("Enero") && array.includes("Marzo" && array.includes("Noviembre"))) {
+  if (array.includes("Enero") && array.includes("Marzo") && array.includes("Noviembre")) {
       mesesPedidos.push("Enero", "Marzo", "Noviembre");
       return mesesPedidos;
   }
