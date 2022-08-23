@@ -151,12 +151,15 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
 
-  var cant = arreglo.length;
+  var cant = 0;
+  var max = arreglo.length;
 
-  if (cant > 18) {
-      return cant;                  //en vez de cant si queres los elementos es 'arreglo'
+  for (var i = 0; i < max; i++) {
+    if (arreglo[i] > 18) {
+      cant += 1;
+    }
   }
-
+  return cant;
 }
 
 
@@ -216,7 +219,7 @@ function mesesDelAño(array) {
   var mesesPedidos = [];
 
   if (array.includes("Enero") && array.includes("Marzo") && array.includes("Noviembre")) {
-      mesesPedidos.push("Enero", "Marzo", "Noviembre");
+      mesesPedidos.push("Marzo", "Noviembre", "Enero");
       return mesesPedidos;
   }
   else {
