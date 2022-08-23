@@ -178,11 +178,11 @@ function operadoresLogicos(num1, num2, num3) {
   if (num1 == 0 || num2 == 0 || num3 == 0) {
     return "Error";
   }
-  else if (num1 > num2 && num1 > num3 && num1 > 0) {
-    return "Número 1 es mayor y positivo";
-  }
   else if (num1 < 0 || num2 < 0 || num3 < 0) {
     return "Hay negativos";
+  }
+  else if (num1 > num2 && num1 > num3 && num1 > 0) {
+    return "Número 1 es mayor y positivo";
   }
   else if (num3 > num1 && num3 > num2) {
     return num3 = num3 + 1;
@@ -199,12 +199,19 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
 
+  var booleana = true;
+
+  if (numero == 0 || numero == 1) {
+    booleana = false;
+  }
+
   for (var i = 2; i < numero; i++) {
     if (numero % i === 0) {
-      return falso;
+      booleana = false;
+      break;
     }
   }
-  return true;
+  return booleana;
 }
 
 function esVerdadero(valor){
